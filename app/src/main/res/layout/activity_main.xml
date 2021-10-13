@@ -14,6 +14,7 @@
         android:layout_marginStart="143dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="140dp"
+        android:contentDescription="@string/goToAuthPage"
         android:cropToPadding="true"
         android:onClick="change_act"
         android:src="@drawable/city"
@@ -21,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
         android:onClick="goToURL"
-        android:text="Go to URL"
+        android:text="@string/go_to_url"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
