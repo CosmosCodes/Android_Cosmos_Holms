@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Switch to window Activity when clicking on the picture
     public void change_act(View view) {
-        Intent intent = new Intent(this, sort_by_age.class);
+        Intent intent = new Intent(this, log_in.class);
         startActivity(intent);
     }
 

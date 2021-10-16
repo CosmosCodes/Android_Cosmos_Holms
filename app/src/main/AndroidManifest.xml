@@ -14,14 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CosmosHolms">
         <activity
+            android:name=".MainMenu"
+            android:exported="false" />
+        <activity
             android:name=".registeredActivity"
             android:exported="true" />
         <activity
-            android:name=".sort_by_age"
+            android:name=".log_in"
             android:exported="true" />
         <activity
-            android:configChanges="orientation|keyboardHidden|screenSize"
             android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

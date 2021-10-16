@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/root_element"
-    tools:context=".sort_by_age">
+    tools:context=".log_in">
 
     <Button
         android:id="@+id/buttonBack"
@@ -21,7 +21,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="246dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,11 +48,18 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/logInButton"
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:onClick="logIn"
             android:text="Войти" />
+
+        <Button
+            android:id="@+id/registered_button"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:onClick="registeredPage"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

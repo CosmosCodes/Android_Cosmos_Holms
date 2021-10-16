@@ -4,25 +4,28 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.EditText;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textview.MaterialTextView;
 
-public class sort_by_age extends AppCompatActivity {
+public class log_in extends AppCompatActivity {
 
-    ConstraintLayout root;
+    private ConstraintLayout root;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sort_by_age);
+        setContentView(R.layout.activity_log_in);
 
         root = findViewById(R.id.root_element);
     }
@@ -41,6 +44,9 @@ public class sort_by_age extends AppCompatActivity {
 
         if (isValidEmail(getEmail) && !pass.getText().toString().equals("")) {
             Snackbar.make(root, "Вход выполнен!", Snackbar.LENGTH_LONG).show();
+            Intent intent = new Intent(this, MainMenu.class);
+            startActivity(intent);
+            finish();
         }
         else{
             ShowLogInCheckWindow();
@@ -53,7 +59,14 @@ public class sort_by_age extends AppCompatActivity {
         Snackbar.make(root, "Неверные данные", Snackbar.LENGTH_LONG).show();
     }
 
-    public final static boolean isValidEmail(CharSequence target) {
+    public static boolean isValidEmail(CharSequence target) {
         return !TextUtils.isEmpty(target) && android.util.Patterns.EMAIL_ADDRESS.matcher(target).matches();
     }
+
+    public void registeredPage(View view) {
+        Intent intent = new Intent(this, registeredActivity.class);
+        startActivity(intent);
+    }
+
+
 }

@@ -4,38 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="283dp"
-        android:layout_height="278dp"
-        android:layout_marginStart="143dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="140dp"
+        android:id="@+id/imageAuth"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/cosmos"
         android:contentDescription="@string/goToAuthPage"
-        android:cropToPadding="true"
         android:onClick="change_act"
-        android:src="@drawable/city"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <Button
-        android:id="@+id/goToPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:onClick="goToURL"
-        android:text="@string/go_to_url"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="407dp"
+        android:layout_height="245dp"
+        android:background="@drawable/background_video"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

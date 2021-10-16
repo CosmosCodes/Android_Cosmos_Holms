@@ -31,7 +31,7 @@ public class registeredActivity extends AppCompatActivity {
     public void ShowWebViewWebContent(){
         webContent = findViewById(R.id.webContent);
         webContent.getSettings().setJavaScriptEnabled(true);
-        webContent.loadUrl("http://cosmosholms.com/welcome_page/");
+        webContent.loadUrl("http://cosmosholms.com/173-2/?action-rcl=register");
 
         WebViewClient webViewClient = new WebViewClient() {
             @SuppressWarnings("deprecation") @Override
