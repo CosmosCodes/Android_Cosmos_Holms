@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Android_Cosmos_Holms/app/src/main/res/layout/activity_log_in.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/Android_Cosmos_Holms/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/Android_Cosmos_Holms/app/src/main/res/layout/activity_main_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/CosmosHolms/app/src/main/res/drawable/ic_home_24.xml" value="0.3828125" />
         <entry key="..\:/AndroidStudioProjects/CosmosHolms/app/src/main/res/layout/activity_log_in.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/CosmosHolms/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />

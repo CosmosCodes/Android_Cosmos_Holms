@@ -4,27 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/cielo"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imageAuth"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@drawable/cosmos"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/planet"
         android:contentDescription="@string/goToAuthPage"
         android:onClick="change_act"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
         tools:srcCompat="@tools:sample/avatars" />
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="407dp"
-        android:layout_height="245dp"
+        android:layout_width="261dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/background_video"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
