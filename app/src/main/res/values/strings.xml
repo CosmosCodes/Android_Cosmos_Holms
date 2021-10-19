@@ -3,4 +3,9 @@
     <string name="goToAuthPage">Переход на страницу авторизации</string>
     <string name="go_to_url">Go to URL</string>
     <string name="home">Home</string>
+    <string name="registration">Регистрация</string>
+    <string name="log_in">Войти</string>
+    <string name="enter_pass">Введите пароль</string>
+    <string name="enter_email">Введите Email</string>
+    <string name="back">Back</string>
 </resources>

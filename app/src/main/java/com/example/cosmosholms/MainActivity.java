@@ -20,11 +20,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //Switch to window Activity containing content WebView
-    public void goToURL(View view) {
-        Intent intent = new Intent(this, registeredActivity.class);
-        startActivity(intent);
-    }
 
     @Override
     public void onBackPressed() {
